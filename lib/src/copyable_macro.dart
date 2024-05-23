@@ -186,7 +186,7 @@ macro class Copyable implements ClassDeclarationsMacro, ClassDefinitionMacro {
         className,
         '(',
         for (final param in params)
-          ...[param.name, ': ', param.name, ' != null ? ',param.name, '.call()', ' : this.',param.name, ','],
+          ...[param.name, ': ', param.name, ' != null ? ',param.name, '.call()', ' : this.',param.name, ', '],
         ');'
       ],
     );
